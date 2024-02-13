@@ -1,0 +1,89 @@
+body {
+    background-image: url(photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: antiquewhite;
+}
+#container {
+    background-color: rgba(250, 235, 215, 0.89);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius: 50px;
+    color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fauna One', serif;    
+    margin: 20px;
+    padding: 20px;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #FB6700;
+    align-self: center;
+    font-size: 40px;
+}
+input {
+    padding: 5px;
+    font-family: 'Fauna One', serif;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#addChild {
+    background-color: #2795E9;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Fauna One', serif;
+}
+#btn {
+    background-color: #FB6700;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Fauna One', serif;
+    font-size: 15px;
+}
+#child {
+display: none;
+font-family: 'Fauna One', serif;
+border-radius: 5px;
+}
+#showTotalAmountToPay {
+    display: flex;
+    margin-left: 20px;
+}
+#billSplit, #totalChild, #totalAmount {
+    font-family: 'Fauna One', serif;
+    background-color: rgb(245, 245, 220);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media all and (max-width: 800px) {
+    #container {
+        width: 500px;
+        height: 825px;
+        }
+    #showTotalAmountToPay {
+        margin-left: 5px;
+  }
+}
+@media all and (max-width: 500px) {
+    #container {
+        width: 400px;
+        height: 825px;
+        }
+    #showTotalAmountToPay {
+        margin-left: 5px;
+  }
+}
